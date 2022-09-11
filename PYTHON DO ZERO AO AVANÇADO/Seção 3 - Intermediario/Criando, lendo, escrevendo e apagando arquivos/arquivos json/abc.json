@@ -1,0 +1,10 @@
+{
+ "Pessoa1": {
+  "nome": "Jimm",
+  "idade": 27
+ },
+ "Pessoa2": {
+  "nome": "Pam",
+  "idade": 29
+ }
+}
