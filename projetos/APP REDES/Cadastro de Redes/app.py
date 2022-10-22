@@ -1,9 +1,9 @@
+from time import sleep
 from typing import List
-from layout.menu import menu, separador, opcao
+
 from arquivos.read import arqExiste, ler
 from arquivos.write import criarArq, gravar, separador
-from time import sleep
-
+from layout.menu import menu, opcao, separador
 
 # VERIFICAR EXISTENCIA DE ARQUIVO DE CONSULTA
 if arqExiste('clientes_rede.txt'):      # RELATÓRIO DA REDE
@@ -25,7 +25,7 @@ else:
 # ----------------------------------------------------------
 
 separador()
-op = menu(f'1 -> Clientes p/ adicionar na Rede\n2 -> Clientes p/ Remover da Rede\n3 -> Verificar se é Cliente\nR: ')
+op = menu(f'1 -> Clientes p/ adicionar na Rede\n2 -> Clientes p/ Remover da Rede\nR: ')
 
 if op == 0:
     print('saindo...')
