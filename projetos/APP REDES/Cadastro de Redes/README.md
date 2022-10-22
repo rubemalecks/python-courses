@@ -9,5 +9,5 @@
 
 # ANALISADOR
 
-- 1º. Será criado um arquivo "add_rede.txt" para cliente que precisaram ser adicionados na rede interna.
+- 1º. Será criado um arquivo "add_rede.txt" para clientes que precisaram ser adicionados na rede interna.
 - 2º. Será criado um arquivo "rmv_rede.txt" para clientes que precisaram ser removidos da rede interna.
