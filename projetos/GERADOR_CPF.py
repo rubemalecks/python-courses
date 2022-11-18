@@ -1,3 +1,4 @@
+print("CPF GERADO: ", end="")
 while True:
     from random import randint
     p = 0
@@ -5,6 +6,7 @@ while True:
     cpf_novo = (cpf[:9])
     cont1 = 1
     soma1, soma2, cont2 = 0, 0, 0
+    
     for c in range(len(cpf_novo)):
         soma1 += int(cpf_novo[c]) * cont1
         cont1 += 1
@@ -19,7 +21,7 @@ while True:
     if dig2 == 10:
         dig2 = 0
     cpf_novo = str(cpf_novo) + str(dig2)
-
+    
     if cpf_novo == cpf:
         cpf_novo = str(cpf_novo)
         for letra in cpf_novo:

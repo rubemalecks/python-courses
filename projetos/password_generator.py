@@ -1,4 +1,5 @@
 from random import randint
+
 print('''
 
 BEM VINDO NOOB!!!
@@ -9,14 +10,9 @@ letras = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
           'Ç', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ç')
 
 
-# op_menu = int(input('''
-# 0 - só letras
-# 1 - numeros
-# 2 - letras e numeros
-# '''))
 
 senha_gerada = list()
-q_digitos = int(input('Quantos Digitos: '))
+q_digitos = int(input('Quantas Letras: '))
 
 for c in range(q_digitos):
 
@@ -27,8 +23,8 @@ for c in range(q_digitos):
     else:
         dig_aleatorio = randint(0, 9)
         senha_gerada.append(dig_aleatorio)
-# print(senha_gerada)
+
 senha_gerada = str(senha_gerada)
 senha_gerada = senha_gerada.strip().replace("'", "").replace(
-    "]", "").replace("[", "").replace(",", "").strip()
+    "]", "").replace("[", "").replace(",", "").replace(" ", "").strip()
 print(senha_gerada)
