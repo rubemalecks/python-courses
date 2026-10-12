@@ -16,7 +16,6 @@ while True:
             print("Digite apenas uma letra!")
             continue
         break
-    print (type(inputUsuario))
 
     posicao = palavraOcultada.index(inputUsuario) if inputUsuario in palavraOcultada else -1
     if (posicao>= 0):
@@ -24,6 +23,7 @@ while True:
     else:
         print("Letra não encontrada")
         chances -= 1
+    print("Palavra Ocultada: ", "".join(palavraOcultadaL))
     if chances == 0:
         print("Você perdeu!")
         break
