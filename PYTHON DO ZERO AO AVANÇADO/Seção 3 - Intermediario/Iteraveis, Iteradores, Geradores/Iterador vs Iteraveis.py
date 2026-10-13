@@ -1,4 +1,4 @@
-# O For comumente transforma nossas listas em iteradores
+# O For comumente transforma nossas listas em iteraveis
 
 # Com o FOR
 
